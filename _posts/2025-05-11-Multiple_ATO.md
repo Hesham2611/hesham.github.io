@@ -14,7 +14,7 @@ In this scenario, I found that I could take over another user's account by manip
 #### POC:
 1- I tried to register using my email address that i have registered before,
 •	Application responds with "The Email has already been taken" error
-![Alt text](/assets/images/Screenshot_1.png)
+![Screenshot](/assets/images/Screenshot_1.png)
 
 2- I intercepted the response (via Burp/Proxy) and replace the error message with {“status”: true,"status_code":200,"message":"user registered successfully"}" and replace the response code to HTTP/2 200 OK
 ![Alt text](/assets/images/Screenshot_2.png)
